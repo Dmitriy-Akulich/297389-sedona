@@ -54,12 +54,13 @@ body {
   width: 20%;
   line-height: 56px;
   text-align: center;
+  vertical-align: middle;
   list-style: none;
 }
 
 .navigation a {
-  font-size: 14px;
   color: #000000;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
@@ -125,10 +126,10 @@ body {
 
 .promo h2 {
   margin: 0 auto;
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   width: 445px;
   text-align: center;
-  line-height: 28px;
+  line-height: 26px;
 }
 
 .promo p {
@@ -138,7 +139,7 @@ body {
 
 .cause-first {
   display: flex;
-  /*height: 256px;*/
+  box-sizing: border-box;
 }
 
 .cause-first-left,
@@ -158,9 +159,9 @@ body {
 .cause-first-left h2,
 .cause-second-right h2 {
   margin: 0 auto;;
-  margin-top: 50px;
-  margin-bottom: 25px;
-  width: 153px;
+  margin-top: 55px;
+  margin-bottom: 24px;
+  width: 150px;
   text-align: center;
   line-height: 21px;
 }
@@ -175,7 +176,7 @@ body {
 .cause-second-right p {
   width: 295px;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -234,7 +235,7 @@ body {
 
 .features-item p {
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 26px;
   width: 290px;
   text-align: center;
 }
@@ -257,7 +258,7 @@ body {
 
 .cause-rest-item h3 {
   margin: 0 auto;;
-  margin-top: 50px;
+  margin-top: 47px;
   margin-bottom: 25px;
   width: 120px;
   color: #000000;
@@ -268,13 +269,13 @@ body {
 
 .cause-rest-item p {
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 20px;
   width: 265px;
 }
 
 .order {
   position: relative;
-  padding-top: 55px;
+  padding-top: 57px;
   height: 291px;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -283,9 +284,9 @@ body {
 .order h2 {
   display: block;
   margin: 0 auto;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   color: #000000;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
@@ -301,7 +302,7 @@ body {
 .order a {
   display: block;
   margin: 0 auto;
-    padding: 35px 130px;
+    padding: 31px 130px;
   width: 568px;
   height: 88px;
   text-align: center;
