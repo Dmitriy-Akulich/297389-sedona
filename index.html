@@ -11,14 +11,12 @@
   <body>
     <div class="container">
       <header class="header">
-        <nav>
-          <ul class="navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li class="navigation-flex-right"><a href="#">Карта штата</a></li>
-            <li><a href="sedona-hotels.html">Гостиницы</a></li>
-          </ul>
-        </nav>
+        <ul class="navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li class="navigation-flex-right"><a href="#">Карта штата</a></li>
+          <li><a href="sedona-hotels.html">Гостиницы</a></li>
+        </ul>
         <div class="logo">
           <img src="img/logo.png" width="138" height="70" alt="Логотип">
         </div>
@@ -92,23 +90,28 @@
           <a href="#">Поиск гостиницы в Седоне</a>
           <div class="order-form">
             <form class="clearfix" action="#" method="post">
-              <label for="inrut-date-come">Дата заезда:</label>
-              <input id="inrut-date-come" type="text" placeholder="24 АПРЕЛЯ 2017">
+              <label for="date-come">Дата заезда:</label>
+              <input class="input-date-come" id="date-come" type="text" placeholder="24 АПРЕЛЯ 2017">
               <span class="icon-calendar"></span>
 
-              <label for="input-date-exit">Дата выезда:</label>
-              <input id="input-date-exit" type="text" placeholder="4 ИЮНЯ 2017">
+              <label for="date-exit">Дата выезда:</label>
+              <input class="input-date-exit" id="date-exit" type="text" placeholder="4 ИЮНЯ 2017">
               <span class="icon-calendar"></span>
 
-              <label for="input-number-grown-up">Взрослые:</label>
-              <button type="button">-</button>
-              <input id="input-number-grown-up" type="text"  placeholder="2">
-              <button type="button">+</button>
 
-              <label for="input-number-children">Дети:</label>
-              <button type="button">+</button>
-              <input id="input-number-children" type="text"  placeholder="0">
-              <button type="button">-</button>
+              <label for="grown-up">Взрослые:</label>
+              <div class="box-input-number-grown-up">
+                <button type="button">&#8722;</button>
+                <input class="input-number-grown-up" id="grown-up" type="text"  placeholder="2">
+                <button type="button">+</button>
+              </div>
+
+              <label for="number-children">Дети:</label>
+              <div class="box-input-number-child">
+                <button type="button">+</button>
+                <input class="input-number-child" id="number-children" type="text"  placeholder="0">
+                <button type="button">&#8722;</button>
+              </div>
 
               <button type="submit">НАЙТИ</button>
             </form>
