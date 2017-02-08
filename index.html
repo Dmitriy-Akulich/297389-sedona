@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/icon.png" type="image/png">
@@ -11,12 +11,14 @@
   <body>
     <div class="container">
       <header class="header">
-        <ul class="navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li class="navigation-flex-right"><a href="#">Карта штата</a></li>
-          <li><a href="sedona-hotels.html">Гостиницы</a></li>
-        </ul>
+        <nav>
+          <ul class="navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li class="navigation-flex-right"><a href="#">Карта штата</a></li>
+            <li><a href="sedona-hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
         <div class="logo">
           <img src="img/logo.png" width="138" height="70" alt="Логотип">
         </div>
@@ -39,7 +41,7 @@
             <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="cause-first-right">
-            <img src="img/cause-first.jpg" width="800" height="256" alt="city">
+            <img src="img/cause-first.jpg" width="1600" height="800" alt="city">
           </div>
         </section>
         <section class="features">
@@ -58,7 +60,7 @@
         </section>
         <section class="cause-second">
           <div class="cause-second-left">
-            <img src="img/cause-second.jpg" width="800" height="256" alt="devil's bridge">
+            <img src="img/cause-second.jpg" width="1600" height="800" alt="devil's bridge">
           </div>
           <div class="cause-second-right">
             <h2>Там есть мост дьявола</h2>
@@ -85,32 +87,32 @@
         </section>
         <section class="order">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предпалогаемые даты поездки,<br> и мы покажем вам лучшие
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
               предложения гостиниц в Седоне</p>
           <a href="#">Поиск гостиницы в Седоне</a>
           <div class="order-form">
             <form class="clearfix" action="#" method="post">
               <label for="date-come">Дата заезда:</label>
-              <input class="input-date-come" id="date-come" type="text" placeholder="24 АПРЕЛЯ 2017">
+              <input class="input-date-come" id="date-come" type="text" name="date come" placeholder="24 АПРЕЛЯ 2017">
               <span class="icon-calendar"></span>
 
               <label for="date-exit">Дата выезда:</label>
-              <input class="input-date-exit" id="date-exit" type="text" placeholder="4 ИЮНЯ 2017">
+              <input class="input-date-exit" id="date-exit" type="text" name="date exit" placeholder="4 ИЮНЯ 2017">
               <span class="icon-calendar"></span>
 
 
               <label for="grown-up">Взрослые:</label>
               <div class="box-input-number-grown-up">
                 <button type="button">&#8722;</button>
-                <input class="input-number-grown-up" id="grown-up" type="text"  placeholder="2">
+                <input class="input-number-grown-up" id="grown-up" type="text" name="all adults" placeholder="2">
                 <button type="button">+</button>
               </div>
 
               <label for="number-children">Дети:</label>
               <div class="box-input-number-child">
-                <button type="button">+</button>
-                <input class="input-number-child" id="number-children" type="text"  placeholder="0">
                 <button type="button">&#8722;</button>
+                <input class="input-number-child" id="number-children" type="text" name="all children" placeholder="0">
+                <button type="button">+</button>
               </div>
 
               <button type="submit">НАЙТИ</button>

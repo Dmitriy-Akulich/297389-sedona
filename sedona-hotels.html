@@ -16,7 +16,7 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li class="navigation-flex-right"><a href="#">Карта штата</a></li>
-            <li><a class="active">Гостиницы</a></li>
+            <li class="active"><a>Гостиницы</a></li>
           </ul>
         </nav>
         <div class="logo">
@@ -59,16 +59,22 @@
                 <label class="hotels-order-label disabled-off" for="apartments">Апартаменты</label>
               </div>
             </div>
-            <div class="hotels-order-cost">
+            <div class="hotels-order-cost filter-range">
               <h2>Стоимость в сутки (Р):</h2>
-              <div class="price-range">
-                <span>от 0</span>
-                <span>до 3000</span>
+              <div class="price-controls">
+                <label class="min-price">от
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">до
+                  <input type="text" name="max-price" value="3000">
+                </label>
               </div>
-              <div class="skroll">
-                <button class="skroll_left"></button>
-                <button class="skroll_right"></button>
-                <div class="skroll_field"></div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
               <button type="submit" class="btn-form">ПОКАЗАТЬ</button>
             </div>
