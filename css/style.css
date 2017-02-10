@@ -40,6 +40,12 @@ body h3 {
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
 }
 
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+	}
+}
+
 .header {
   margin: 0;
   min-height: 56px;
@@ -47,6 +53,8 @@ body h3 {
 }
 
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding-left: 6%;
@@ -111,7 +119,8 @@ body h3 {
   top: 0;
   left: 50%;
   z-index: 100;
-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /*--------------main--------------*/
@@ -169,9 +178,15 @@ transform: translateX(-50%);
 
 .cause-first,
 .cause-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .cause-first-left,
@@ -199,7 +214,8 @@ transform: translateX(-50%);
   height: auto;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 
 }
 
@@ -230,8 +246,12 @@ transform: translateX(-50%);
 
 .features {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 330px;
   background-color: #ffffff;
 }
@@ -252,7 +272,8 @@ transform: translateX(-50%);
   background-image: url("../img/sprites.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .features-item:nth-child(2)::before {
@@ -265,7 +286,8 @@ transform: translateX(-50%);
   background-image: url("../img/sprites.png");
   background-repeat: no-repeat;
   background-position: -101px 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .features-item:last-child::before {
@@ -278,7 +300,8 @@ transform: translateX(-50%);
   background-image: url("../img/sprites.png");
   background-repeat: no-repeat;
   background-position: -203px 0;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .features-name {
@@ -295,8 +318,12 @@ transform: translateX(-50%);
 }
 
 .cause-rest {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 256px;
   background-color: #eeeeee;
 }
@@ -363,6 +390,7 @@ transform: translateX(-50%);
   text-decoration: none;
   background-color: #766357;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .order-form-none {
@@ -382,7 +410,8 @@ transform: translateX(-50%);
   font-weight: bold;
   background-color: #ffffff;
   box-sizing: border-box;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .order-form label:nth-of-type(1) {
@@ -595,8 +624,12 @@ input[type="text"]:focus {
 
 .footer {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -699,6 +732,8 @@ input[type="text"]:focus {
 }
 
 .form-hotels-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #ffffff;
 }
@@ -736,7 +771,8 @@ input[type="text"]:focus {
   height: 7px;
   border-top-style: none;
   border-right-style: none;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 input[type="checkbox"] {
@@ -760,7 +796,7 @@ input[type="checkbox"]:checked ~ label::after {
   border-radius: 5px;
 }
 
-.disabled-off-checked::after {      /*---------------???????----------------*/
+.disabled-off-checked::after {
   content: "";
   display: block;
   position: absolute;
@@ -772,7 +808,8 @@ input[type="checkbox"]:checked ~ label::after {
   height: 7px;
   border-top-style: none;
   border-right-style: none;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .disabled-off,
@@ -789,13 +826,13 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .hotels-order-bun {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .hotels-order-cost {
   margin-left: auto;
   padding-top: 26px;
-  width: 330px;
+  width: 328px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -810,17 +847,15 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .hotels-order-cost > h2 {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .price-controls {
   position: relative;
-
-  height: 36px;
+  height: 33px;
   margin-bottom: 20px;
-
+  margin-left: 10px;
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -830,21 +865,18 @@ input[type="checkbox"]:checked ~ label::after {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
-  line-height: 38px;
+  line-height: 33px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -857,10 +889,8 @@ input[type="checkbox"]:checked ~ label::after {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
   outline: none;
@@ -869,20 +899,18 @@ input[type="checkbox"]:checked ~ label::after {
 
 .range-controls {
   position: relative;
-
-  margin-bottom: 32px;
+  margin-left: 10px;
+  margin-bottom: 33px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
@@ -891,7 +919,6 @@ input[type="checkbox"]:checked ~ label::after {
   top: -9px;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -914,7 +941,7 @@ input[type="checkbox"]:checked ~ label::after {
 .btn-form {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 5px 31px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -931,8 +958,9 @@ input[type="checkbox"]:checked ~ label::after {
   background: #ffffff;
 }
 
-
 .result-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 6%;
   padding-right: 6%;
@@ -963,7 +991,9 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .result-order-name {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   min-width: 135px;
   font-size: 21px;
   font-weight: bold;
@@ -971,7 +1001,9 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .result-order-class {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-left: 30px;
   width: 480px;
 }
@@ -997,9 +1029,14 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .result-order-ranging{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
   width: 35px;
 }
 
@@ -1044,8 +1081,11 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .search-results-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   padding-left: 6%;
   padding-right: 6%;
   min-height: 150px;
@@ -1054,7 +1094,8 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .search-results-item-img {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding-top: 30px;
   margin: 0;
   width: 135px;
@@ -1068,10 +1109,15 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .search-results-item-index {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: wrap;
-  align-content: flex-start;
-  align-self: flex-start;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding-top: 27px;
   margin-left: 30px;
   width: 260px;
@@ -1154,7 +1200,8 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .img-rating {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding-top: 29px;
   box-sizing: border-box;
 }
@@ -1166,6 +1213,7 @@ input[type="checkbox"]:checked ~ label::after {
   width: 17px;
   height: 18px;
   list-style: none;
+  vertical-align: top;
   background-image: url("../img/sprites.png");
   background-repeat: no-repeat;
   background-position: -105px -97px;
@@ -1173,7 +1221,7 @@ input[type="checkbox"]:checked ~ label::after {
 
 .img-rating ul {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
   text-align: right;
 }
 
@@ -1189,8 +1237,12 @@ input[type="checkbox"]:checked ~ label::after {
 }
 
 .footer-hotels {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
 }

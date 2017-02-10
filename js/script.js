@@ -2,20 +2,11 @@ var controls = document.querySelector('.order-form');
 controls.classList.add('order-form-none');
 
 
-    clickControl(controls);
+var buttonSearch = document.querySelector('.open-form'),
+    formSearch = document.querySelector('.order-form');
 
-
-function toggleStyle(control) {
-    for (var i = 0; i < controls.length; i++) {
-        controls[i].classList.remove('order-form-none');
-    }
-
-    control.classList.add('order-form');
-
-}
-
-function clickControl(control) {
-    control.addEventListener('click', function() {
-        toggleStyle(control);
-    });
+buttonSearch.addEventListener('click', openForm);
+function openForm(e){
+  e.preventDefault;
+  formSearch.classList.remove('order-form-none');
 }
