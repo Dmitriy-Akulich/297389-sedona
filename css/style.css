@@ -433,8 +433,8 @@ body h3 {
   box-sizing: border-box;
   -webkit-animation-name: move_form_down;
           animation-name: move_form_down;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -452,39 +452,21 @@ body h3 {
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes move_form {
-  0% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    opacity: 1;
-  }
-  30% {
-    opacity: 0;
-  }
-  80% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    opacity: 0;
-  }
-  100% {
-      -webkit-transform: translateY(-1000%);
-              transform: translateY(-1000%);
-      opacity: 0;
-  }
-}
-
 @keyframes move_form {
   0% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
     opacity: 1;
   }
-  30% {
-    opacity: 0;
+  20% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
-  80% {
+  60% {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
+  }
+  70% {
     opacity: 0;
   }
   100% {
@@ -493,24 +475,6 @@ body h3 {
       opacity: 0;
   }
 }
-
-
-@-webkit-keyframes  move_form_down {
-  0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
 
 @keyframes  move_form_down {
   0% {
@@ -518,8 +482,17 @@ body h3 {
             transform: translateY(-100%);
     opacity: 0;
   }
+  50% {
+    opacity: 1;
+  }
   70% {
-    opacity: 0;
+    -webkit-transform: translateY(30%);
+              transform: translateY(30%);
+    opacity: 1;
+  }
+  90% {
+    -webkit-transform: translateY(-10%);
+              transform: translateY(-10%);
   }
   100% {
     -webkit-transform: translateY(0%);
